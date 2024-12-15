@@ -7,9 +7,14 @@ function TodoInput() {
   
   function handleOnClick(e) {
     e.preventDefault();
+
+    if(refElementVal.current.value === '') {
+      return ;
+    } else {
     const refval = refElementVal.current.value;
     refElementVal.current.value = '';
     addNewItems(refval);
+    }
   }
 
   return (
@@ -19,7 +24,7 @@ function TodoInput() {
         placeholder="Enter your todo..."
         ref={refElementVal}
       />
-      <button >Add</button>
+      <button>Add</button>
     </form>
   );
 }
