@@ -1,0 +1,101 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.center-container {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    box-shadow: 0 0 5px #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.input-container {
+    display: flex;
+    gap: 6px;
+}
+
+.input-container input {
+    width: 75%;
+    padding: 10px 8px;
+    border-radius: 5px;
+    border: 2px solid;
+    outline: none;
+    border-color: violet;
+    background: transparent;
+    color: #fff;
+}
+
+.input-container input:focus {
+    border: none;
+    outline: auto;
+    outline-color: rgb(173, 165, 177);
+}
+
+::placeholder {
+    color: #fff;
+}
+
+.input-container button {
+    width: 25%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: violet;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+}
+
+.input-container button:hover {
+    color: yellowgreen;
+}
+
+.listItems {
+    width: 100%;
+    border: 1px solid;
+    padding: 6px 8px;
+    list-style-type: none;
+    border-radius: 5px;
+    color: #fff;
+    border-color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 10px 0 0 0;
+}
+
+.listItems span {
+    cursor: pointer;
+}
+
+.message {
+    text-align: center;
+    color: rgb(255, 69, 69);
+    font-size: 1.2rem;
+    border: 1px solid #d3c634;
+    border-radius: 5px;
+    padding: 6px 0;
+    margin: 15px 0 0 0;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+    .center-container {
+        width: 100%;
+        max-width: 90%;
+        padding: 15px;
+    }
+}
